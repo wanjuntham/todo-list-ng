@@ -1,0 +1,8 @@
+  <div>
+    <h4>{{stage}}</h4>
+    <div *ngFor="let parentTodo of todos">
+      <app-card [todo]="parentTodo"></app-card>
+    </div>
+  </div>
+
+ 
