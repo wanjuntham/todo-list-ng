@@ -1,6 +1,7 @@
 <div [style.color]="todo.label" class="card">
   <p>{{todo.description}}</p>
   <p>Due Date: {{todo.dueDate}}</p>
+  <p>User Name: {{user.name}}</p>
   <button (click)="onClickColorChange('green')">GREEN</button>
   <button (click)="onClickColorChange('blue')">BLUE</button>
   <button (click)="onClickColorChange('red')">RED</button>

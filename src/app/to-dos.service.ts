@@ -5,6 +5,8 @@ export interface Todo {
   label: string
   description: string
   dueDate: string
+  stage: string
+  userID: number
 }
 
 export interface List {
@@ -23,6 +25,7 @@ export class ToDosService {
       description: 'Buy Groceries',
       dueDate: '13-May-2019',
       stage: 'backlog',
+      userID: 1
     },
     {
       id: 2,
@@ -30,6 +33,7 @@ export class ToDosService {
       description: 'Cook Dinner',
       dueDate: '15-May-2019',
       stage: 'backlog',
+      userID: 2
     },
     {
       id: 3,
@@ -37,6 +41,7 @@ export class ToDosService {
       description: 'Sleep 8 hours',
       dueDate: '17-May-2019',
       stage: 'backlog',
+      userID: 1
     },
     {
       id: 4,
@@ -44,6 +49,7 @@ export class ToDosService {
       description: 'Buy Groceries',
       dueDate: '13-May-2019',
       stage: 'wip',
+      userID: 2
     },
     {
       id: 5,
@@ -51,6 +57,7 @@ export class ToDosService {
       description: 'Sleep 8 hours',
       dueDate: '17-May-2019',
       stage: 'wip',
+      userID: 1
     },
     {
       id: 6,
@@ -58,6 +65,7 @@ export class ToDosService {
       description: 'Cook Dinner',
       dueDate: '15-May-2019',
       stage: 'completed',
+      userID: 2
     },
     {
       id: 7,
@@ -65,6 +73,7 @@ export class ToDosService {
       description: 'Sleep 8 hours',
       dueDate: '17-May-2019',
       stage: 'completed',
+      userID: 1
     },
   ]
 
